@@ -1,0 +1,16 @@
+[:page
+  name="listTopicsView"
+  args="List<Topic> topics"
+  import="../model/topic.dart"]
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>list_topics</title>
+  </head>
+ 
+  <body>
+    <ul>
+      <li>[= topics.map((topic)=>topic.title).join('<li>') ]
+    </ul>
+  </body>
+</html>
